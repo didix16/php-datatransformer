@@ -1,0 +1,26 @@
+{
+    "name": "didix16/php-datatransformer",
+    "description": "A simple library that allows transform any kind of data to native php data or whatever",
+    "type": "library",
+    "version": "1.0.0",
+    "keywords": ["data", "transformer", "datatransformer", "php", "simple", "dto"],
+    "homepage": "https://github.com/didix16/php-datatransformer",
+    "require": {
+        "php": ">= 7.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dídac Rodríguez",
+            "email": "drodriguez816@gmail.com",
+            "homepage": "https://github.com/didix16",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "didix16\\DataTransformer\\": "src/"
+        }
+    }
+}
