@@ -63,4 +63,39 @@ abstract class DataTransformer implements TransformerInterface
         }
     }
 
+    public final function assertString(&$value): bool
+    {
+        return is_string($value);
+    }
+
+    public final function assertDouble(&$value): bool
+    {
+        return is_double($value);
+    }
+
+    public final function assertArray(&$value): bool
+    {
+        return is_array($value);
+    }
+
+    public final function assertResource(&$value): bool
+    {
+        return is_resource($value);
+    }
+
+    public final function assertResourceClosed(&$value): bool
+    {
+        return gettype($value) === 'resource (closed)';
+    }
+
+    public final function assertNull(&$value): bool
+    {
+        return is_null($value);
+    }
+
+    public final function assertBoolean(&$value): bool
+    {
+        return is_bool($value);
+    }
+
 }
